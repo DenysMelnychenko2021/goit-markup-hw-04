@@ -110,6 +110,8 @@ img {
   color: var(--akcent-text-color);
 }
 .contacts-header-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.16;
@@ -119,6 +121,14 @@ img {
 .contacts-header-link:hover,
 .contacts-header-link:focus {
   color: var(--akcent-text-color);
+}
+.icon-header {
+  margin-right: 10px;
+  fill: var(--additional-color);
+}
+.contacts-header-link:hover .icon-header,
+.contacts-header-link:focus .icon-header {
+  fill: var(--akcent-text-color);
 }
 /*==================END HEADER==================*/
 
@@ -151,6 +161,38 @@ img {
   padding-bottom: 60px;
   background-color: var(--footer-bg-color);
 }
+.join {
+  padding-top: 12px;
+  padding-left: 70px;
+}
+.footer-paragraph {
+  margin-bottom: 20px;
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+.footer-list {
+  display: flex;
+}
+.social-links-list-footer {
+  display: flex;
+}
+.social-links-item-footer:not(:last-child) {
+  margin-right: 10px;
+}
+.social-page-footer {
+  fill: var(--secondary-color);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-link-footer:hover .social-page-footer,
+.social-link-footer:focus .social-page-footer {
+  fill: var(--secondary-color);
+  background-color: var(--akcent-text-color);
+}
 /*==================END FOOTER==================*/
 
 /*==================HERO==================*/
@@ -158,7 +200,13 @@ img {
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
-  background-color: var(--footer-bg-color);
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background-header.jpg);
+  border: 1px solid #000;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-size: cover;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -201,21 +249,19 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.advantages-item) {
-}
 .advantages-item {
   flex-basis: calc((100% - 90px) / 4);
 }
-
 .advantages-subtitle {
   font-size: 14px;
   line-height: 1.16;
   text-transform: uppercase;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 .advantages-paragraph {
   font-size: 14px;
-  line-height: 1.8;
+  line-height: 1.72;
   color: var(--additional-color);
 }
 /*==================END ADVANTAGES==================*/
@@ -271,7 +317,42 @@ img {
 .team-post-paragraph {
   font-size: 16px;
   line-height: 1.2;
+  margin-bottom: 16px;
   color: var(--additional-color);
+}
+.social-links-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.social-page {
+  fill: #afb1b8;
+}
+.social-link-team-card:hover .social-page,
+.social-link-team-card:focus .social-page {
+  fill: var(--secondary-color);
+  border-radius: 50%;
+  background-color: var(--akcent-text-color);
+}
+/*==================CLIENTS==================*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.client-page {
+  fill: #afb1b8;
+  border: #afb1b8 1px solid;
+  border-radius: 3.5px;
+}
+.client-link:hover .client-page,
+.client-link:focus .client-page {
+  fill: var(--akcent-text-color);
+  border: 1px solid var(--akcent-text-color);
 }
 /*==================END INDEX==================*/
 
@@ -316,6 +397,11 @@ img {
   margin-left: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
+.filter-portfolio-item:hover,
+.filter-portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .filter-portfolio-title {
   margin-bottom: 4px;
   margin-left: 24px;
@@ -337,8 +423,7 @@ img {
   padding-bottom: 20px;
   width: 370px;
   background: var(--secondary-color);
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
+  border-top: 0px;
 }
 /*==================END PORTFOLIO==================*/
